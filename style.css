@@ -117,6 +117,9 @@ button {
   .hero-section-image img {
     width: 100%;
   }
+  .head-group .btn-custom{
+    margin-bottom: 1rem;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -143,8 +146,7 @@ button {
   }
   .hero-section-text h1,
   .hero-section-text h5,
-  .head-group .btn-custom,
-  .head-group p {
+  .head-group {
     margin-bottom: 1.5rem !important;
   }
   .hero-section-image img {
