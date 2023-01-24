@@ -1,6 +1,6 @@
 // Navbar Component
 const navbar = document.querySelector("#navbar");
-const navbarComponent = `<div class="container">
+const navbarComponent = `<div class="container-xl">
     <div class="navbar-brand">
       <a href="http://"><img src="images/logo-black.png" alt="logo-black" /></a>
     </div>
@@ -34,3 +34,19 @@ btnMenu.onclick = () => {
 btnHide.onclick = () => {
   navItems.classList.remove("show");
 };
+
+// Scroll efect
+const width = screen.width;
+let scrollPosition = 0;
+
+window.addEventListener("scroll", function () {
+  if (width > 767) {
+    if (scrollPosition > this.scrollY) {
+      navbar.style.top = "0";
+    } else {
+      navbar.style.top = "-100px";
+    }
+  }
+
+  scrollPosition = this.scrollY;
+});
