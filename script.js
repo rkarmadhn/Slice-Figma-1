@@ -40,7 +40,7 @@ const width = screen.width;
 let scrollPosition = 0;
 
 window.addEventListener("scroll", function () {
-  if (width > 767) {
+  if (width > 576) {
     if (scrollPosition > this.scrollY) {
       navbar.style.top = "0";
     } else {
