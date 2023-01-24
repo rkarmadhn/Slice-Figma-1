@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+a {
+  color: #626262;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navbar {
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.links {
+  font-style: medium;
+  letter-spacing: 0.1px;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+  .head-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c4c5c4;
+    padding: 20px;
+  }
+  .navbar-items {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  .navbar-items.show {
+    left: 0;
+  }
+  .list-menu {
+    padding: 10px 20px;
+  }
+  .links {
+    line-height: 24px;
+    display: block;
+    border-bottom: 1px solid #e5ebee;
+    padding: 15px;
+  }
+  .btn-menu,
+  .btn-hide {
+    font-size: 24px;
+    color: #161616;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 576px) and (max-width: 1399.98px) {
+  .head-menu,
+  .btn-menu {
+    display: none;
+  }
+  #navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+  }
+  .navbar-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .btn-custom {
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 32px;
+  }
+}
