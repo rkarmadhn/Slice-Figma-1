@@ -59,7 +59,7 @@ button {
 }
 
 /* Features Section */
-.features {
+.features-section {
   background-color: #f3f3f3;
 }
 .card-title {
@@ -84,6 +84,13 @@ button {
   .hero-section-image img {
     width: 100%;
     height: 305px !important;
+    border-radius: 12px;
+  }
+
+  /* About us Section */
+  .about-us-image img {
+    width: 100%;
+    height: 195px !important;
     border-radius: 12px;
   }
 }
@@ -148,12 +155,36 @@ button {
   }
 
   /* Features section */
-  .features {
+  .features-section {
     padding: 0 !important;
   }
   .card-features {
     padding: 20px 12px;
     border-bottom: 1px solid #999999;
+  }
+
+  /* About us Section */
+  .about-us-section {
+    background-color: #000;
+    padding: 24px 0;
+  }
+  .about-us-image {
+    margin-bottom: 14px !important;
+  }
+  .about-us-image img {
+    width: 100%;
+    height: 305px;
+  }
+  .about-us-text {
+    color: #fff;
+    display: block !important;
+    text-align: center;
+  }
+  .about-us-text h4 {
+    width: 100%;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -0.1px;
   }
 }
 
@@ -189,8 +220,19 @@ button {
   }
 
   /* Features Section */
-  .features {
+  .features-section {
     padding: 40px 0;
+  }
+
+  /* About us Section */
+  .about-us-section {
+    padding: 24px 0;
+  }
+  .about-us-image {
+    margin-bottom: 64px;
+  }
+  .about-us-text {
+    display: flex;
   }
 }
 
@@ -243,7 +285,33 @@ button {
   }
 
   /* Feature Section */
-  .features {
+  .features-section {
     padding: 64px 0;
+  }
+
+  /* About us Section */
+  .about-us-section {
+    background-color: #000;
+    padding: 64px 0;
+  }
+  .about-us .container-xl .row {
+    align-items: center;
+  }
+  .about-us-image img {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+  }
+  .about-us-text {
+    color: #fff;
+    padding-left: 2rem;
+  }
+  .about-us-text h4 {
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -0.1px;
+  }
+  .about-us-text ul li {
+    padding: 8px 0;
   }
 }
