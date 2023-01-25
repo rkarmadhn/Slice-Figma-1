@@ -78,6 +78,28 @@ button {
   margin: 0;
 }
 
+/* CTA Section */
+.cta {
+  background-image: url("https://cdn.pixabay.com/photo/2014/09/30/11/55/castle-467116_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.cta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+  z-index: 1 !important;
+}
+.cta * {
+    z-index: 2; 
+}
+
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   /* Hero Section */
@@ -92,6 +114,12 @@ button {
     width: 100%;
     height: 195px !important;
     border-radius: 12px;
+  }
+
+  /* CTA Section */
+  .cta {
+    padding-left: 64px !important;
+    padding-right: 64px !important;
   }
 }
 
@@ -231,8 +259,8 @@ button {
   .about-us-image {
     margin-bottom: 64px;
   }
-  .about-us-text {
-    display: flex;
+  .cta{
+    padding: 158px 0;
   }
 }
 
@@ -313,5 +341,34 @@ button {
   }
   .about-us-text ul li {
     padding: 8px 0;
+  }
+
+  /* Card Testimonials  */
+  .swiper {
+    width: 100%;
+    height: 300px;
+  }
+  .testimonials {
+    padding: 64px 0;
+  }
+  .card-testimonials {
+    background-color: #f3f3f3;
+    padding: 24px;
+    border: none;
+  }
+  .testimonials-head {
+    margin-bottom: 24px;
+  }
+  .testimonials-head img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  /* CTA Section */
+  .cta {
+    padding: 13rem 0;
   }
 }
